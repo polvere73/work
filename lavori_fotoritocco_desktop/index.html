@@ -42,6 +42,16 @@
             color: #4CAF50;
         }
     </style>
+        <script>
+        window.onload = function() {
+            if (localStorage.getItem('visits') === null) {
+                localStorage.setItem('visits', 1);
+            } else {
+                localStorage.setItem('visits', parseInt(localStorage.getItem('visits')) + 1);
+            }
+            document.getElementById('visits').innerText = localStorage.getItem('visits');
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -60,5 +70,11 @@
             <li><a href="image012.html">Documento 11</a></li>
         </ul>
     </div>
+    <p>loaded <span id="visits">1</span> times.</p>
 </body>
 </html>
+
+
+
+
+
