@@ -42,7 +42,7 @@
             color: #4CAF50;
         }
     </style>
-        <script><!-- contatore -->
+        <script><!-- avvio contatore -->
         window.onload = function() {
             if (localStorage.getItem('visits') === null) {
                 localStorage.setItem('visits', 1);
@@ -52,17 +52,7 @@
             document.getElementById('visits').innerText = localStorage.getItem('visits');
         }
     </script>
-
-
-
-
-
-
-
-
-
-
-    <script>
+    <!--script><!-- azzerare contatore>
         // Funzione per cancellare tutti i dati in localStorage
         function clearLocalStorage() {
             localStorage.clear();
@@ -73,7 +63,7 @@
         window.onload = function() {
             clearLocalStorage();
         };
-    </script>
+</script-->
 
 
 
