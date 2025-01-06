@@ -1,1 +1,2 @@
 
+ok vede il file anche se in un percorso diverso!
