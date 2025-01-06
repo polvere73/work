@@ -56,7 +56,13 @@
             text-align: center; /* Center alignment */
         }
     </style>
-        <script><!-- avvio contatore -->
+
+
+
+
+
+    
+        <!--script><!-- avvio contatore>
         window.onload = function() {
             if (localStorage.getItem('visits') === null) {
                 localStorage.setItem('visits', 1);
@@ -66,6 +72,8 @@
             document.getElementById('visits').innerText = localStorage.getItem('visits');
         }
     </script>
+
+    
     <!--script><!-- azzerare contatore>
         // Funzione per cancellare tutti i dati in localStorage
         function clearLocalStorage() {
@@ -97,7 +105,20 @@
             <li><a href="image002.html"><img src="IMG_002_a_preview.jpg" alt="preview" class="image-preview"></a></li>
             <li><a href="image012.html"><img src="IMG_012_a_preview.jpg" alt="preview" class="image-preview"></a></li>
         </ul>
-        <p class="visits">.<span id="visits">1</span>.</p>
+        <!--p class="visits">.<span id="visits">1</span>.</p-->
+            <p>
+                <?php
+                    $file = 'visite.txt';
+                    if (!file_exists($file)) {
+                        file_put_contents($file, '0');
+                    }
+                    $visite = file_get_contents($file);
+                    $visite = intval($visite) + 1;
+                    file_put_contents($file, $visite);
+                    echo $visite;
+                ?>
+                visite.
+            </p>
     </div>
     
 </body>
