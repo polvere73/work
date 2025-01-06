@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T3Z5N9ZC');</script>
+<!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esempi in lavorazione</title>
@@ -106,20 +113,7 @@
             <li><a href="image012.html"><img src="IMG_012_a_preview.jpg" alt="preview" class="image-preview"></a></li>
         </ul>
         <!--p class="visits">.<span id="visits">1</span>.</p VECCHIO CONTATORE LOCALE JAVA FUNZIONA-->
-            <p>
-                .
-                <?php
-                    $file = 'visite.txt';
-                    if (!file_exists($file)) {
-                        file_put_contents($file, '0');
-                    }
-                    $visite = file_get_contents($file);
-                    $visite = intval($visite) + 1;
-                    file_put_contents($file, $visite);
-                    echo $visite;
-                ?>
-                .
-            </p>
+
     </div>
     
 </body>
