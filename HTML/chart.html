@@ -1,70 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Meteo Service</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      color: #333;
+    }
+    h3 {
+      color: #666;
+      margin-top: -10px;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px; /* Aggiunto per spazio tra i container */
+    }
+    .ideas-box {
+      background: #f9f9f9;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-family: Helvetica, sans-serif;
+      margin-top: 20px;
+      text-align: left;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #999;
+    }
+    .link {
+      color: #4CAF50;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Your Personal Meteo Service</h1>
+    <h3>data: marine-api.open-meteo.com</h3>
+  </div>
 
-    <!DOCTYPE html>
-    <html lang="it">
-    <head>
-      <meta charset="UTF-8">
-      <title>Meteo Service</title>
-      <style>
-        body {
-          font-family: Arial, sans-serif;
-          background-color: #f4f4f4;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          min-height: 100vh;
-          margin: 0;
-        }
-        h1 {
-          color: #333;
-        }
-        h3 {
-          color: #666;
-          margin-top: -10px;
-        }
-        .container {
-          background: #fff;
-          padding: 20px;
-          border-radius: 8px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          max-width: 800px;
-          width: 100%;
-          text-align: center;
-        }
-        img {
-          width: 100%;
-          height: auto;
-          border-radius: 8px;
-          margin-top: 20px;
-        }
-        .footer {
-          margin-top: 20px;
-          font-size: 12px;
-          color: #999;
-        }
-      </style>
-    </head>
-    <body>
-        <div class="container">
-        <p>
-        <h1>Your Personal Meteo Service</h1>
-        <h3>data: marine-api.open-meteo.com</h3>
-        </p>
-        </div><br>
-        
-        <div class="container">
-        <p>
-        <img src="chart.png" alt="Grafico">
-        <div class="footer">
-        </p>
-        <p>😎 ver.01.2025 Davide Massi.</p>
-        </div><br>
-            
-        </div>
-        <p>
-        </p>
-        <p class="container"><a href="https://docs.google.com/forms/d/e/1FAIpQLScSrghvKogyRnPl3pH0xX9_LOW-u_1lXdJvxsuvrT9r_lVD_Q/viewform?usp=dialog" class="link">E già che sei qui lasciami un commento che mi fa piacere!</a>
-        </p>
-    </body>
-    </html>
-  
+  <div class="container">
+    <img src="chart.png" alt="Grafico">
+    <div class="footer">
+      <p>😎 ver.01.2025 Davide Massi.</p>
+    </div>
+  </div>
+    
+  <div class="container ideas-box">
+    <h3>Idee e Suggerimenti</h3>
+    <p>Ecco alcune idee su cui stiamo lavorando per migliorare il nostro servizio meteo personalizzato:</p>
+    <ul>
+      <li>Integrazione di più fonti meteo per dati più accurati.</li>
+      <li>Notifiche personalizzate per condizioni meteorologiche avverse.</li>
+      <li>Interfaccia utente migliorata per una navigazione più intuitiva.</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScSrghvKogyRnPl3pH0xX9_LOW-u_1lXdJvxsuvrT9r_lVD_Q/viewform?usp=dialog" class="link">E già che sei qui lasciami un commento che mi fa piacere!</a></p>
+  </div>
+</body>
+</html>
