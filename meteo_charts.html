@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- Google tag (gtag.js)GOOGLE ANALYTICScopia questo in tutte le pagine di cui ti interessa verificare gli accessi-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y68MHJRFDN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Y68MHJRFDN');
+</script>
+
+  <meta charset="UTF-8">
+  <title>Meteo Service</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      color: #333;
+    }
+    h3 {
+      color: #666;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px; /* Aggiunto per spazio tra i container */
+    }
+    .ideas-box {
+      background: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-family: 'Book Antiqua', serif;
+      
+      font-size: 12pt;
+      margin-top: 0px;
+      text-align: left;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #999;
+    }
+    .link {
+      color: #00008B;
+      <!-- text-decoration: none; -->
+      font-size: 16px;
+      font-family: 'Book Antiqua', serif;
+    }
+    .link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Your Personal Meteo Service</h1>
+    <h3>data: marine-api.open-meteo.com</h3>
+      <div class="footer">
+      <p>😎 ver.01.2025 Davide Massi.</p>
+      </div>
+  </div>
+
+  <div class="container ideas-box">
+    <h3><a href="meteo_charts_note.html">Note</a></h3>
+  </div>
+
+  <div class="container">
+    <img src="HTML\chart_wind.png" alt="Grafico1">
+    <p style="font-size: 12px;">PREVISIONE A 3 GIORNI di VENTO e TEMPERATURA</p>
+    <p style="font-size: 12px;">Scala sinistra per intensità [nodi], raffiche [nodi] e temperatura [C°]</p>
+    <p style="font-size: 12px;">Scala destra per direzione del vento [0-360°]</p>
+  </div>
+
+    <div class="container">
+    <img src="HTML\chart_rain.png" alt="Grafico2">
+    <p style="font-size: 12px;">PREVISIONE A 3 GIORNI di PIOGGIA, NUVOLOSITA' e PRESSIONE</p>
+    <p style="font-size: 12px;">Scala sinistra per pressione atmosferica [hPa]</p>
+    <p style="font-size: 12px;">Scala destra per copertura nuvolosa [%] e pioggia [mm]</p>
+  </div>
+
+    <div class="container">
+    <img src="HTML\chart_waves.png" alt="Grafico3">
+    <p style="font-size: 12px;">PREVISIONE A 3 GIORNI di ONDA in varie località</p>
+    <p style="font-size: 12px;">Scala sinistra (logaritmica) l'altezza [m] e il periodo [s]</p>
+    <p style="font-size: 12px;">Scala destra per la direzione di provenienza dell'onda [0-360°]</p>
+  </div>
+    
+
+  <div class="container">
+    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScSrghvKogyRnPl3pH0xX9_LOW-u_1lXdJvxsuvrT9r_lVD_Q/viewform?usp=dialog" class="link">E già che sei qui lasciami un commento che mi fa piacere!</a></p>
+  </div>
+</body>
+</html>
