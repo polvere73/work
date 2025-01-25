@@ -1,0 +1,69 @@
+        <!DOCTYPE html>
+        <html lang="it">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+            <style>
+                body {
+                    font-family: 'Montserrat', sans-serif;
+                }
+                .header {
+                    text-align: center;
+                    padding: 10px;
+                    border-bottom: 2px solid #0091ff;
+                }
+                .header h1 {
+                    margin: 0;
+                    color: #0091ff;
+                }
+                .header strong {
+                    font-weight: 700;
+                }
+                .header img {
+                    width: 100px;
+                    height: auto;
+                    border-radius: 50%;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <div>
+                    <h1>Davide Massi</h1>
+                    <p>
+                        <strong>&nbsp;Artigiano Digitale in Alassio -</strong> 
+                        <strong>Architetto</strong>
+                    </p>
+                    <p>massidavide@gmail.com<br>Tel: +39 339 4131348</p>
+                </div>
+                <img src="https://share1.cloudhq-mkt3.net/f1a2445b3730ae.jpeg" alt="me">
+            </div>
+        <div style="padding: 10px; "><!--era20; text-align: justify;-->
+            <p style="font-size: 10pt;">Eg. professionista,
+                <br>
+            </p>
+            <p style="font-size: 10pt;">
+                <strong>Competenza, Puntualità e disponibilità</strong>, sono qualità che mi vengono riconosciute dai miei clienti da più di vent'anni di collaborazioni con studi di progettazione in vari settori.
+                <br>
+                Architettura, ingegneria, geologia, in ogni ambito in cui si è presentata una sfida tecnica in cui fossero richieste 
+                <strong>abilità legate a strumenti digitali e sensibilità artistica</strong>, ho puntualmente fatto del mio meglio per centrare il risultato con soddisfazione della committenza.
+                <br>
+                Sono sempre pronto ad intraprendere nuove sfide, questa è la chiave che mi stimola a mantenere sempre alta la qualità del mio operato. Da tempo seguo il fermento legato all'utilizzo dell'<strong>intelligenza artificiale</strong> e ne sto quotidianamente sperimentando i vantaggi nel mio ambito lavorativo.
+                <br>
+                <br>
+                Sarebbe gratificante continuare a mettere la mia esperienza a disposizione di nuove realtà che sentissero la necessità di alleggerire il proprio carico di lavoro, ottimizzandone il flusso operativo o demandandone alcuni aspetti.
+                <br>
+                <br>
+                Se non l'avessimo già fatto, <strong>incontriamoci di persona</strong> presso la tua sede operativa per valutare insieme una collaborazione vantaggiosa e produttiva per entrambi. Nel frattempo in questo spazio virtuale troverai alcuni dei progetti a cui mi sono dedicato di recente.<br><br>Ringraziandoti per l'attenzione ti porgo i miei più sinceri saluti.
+            </p>
+            <p style="font-size: 10pt;">
+                <br>
+                <span class="signature" style="font-size: 10pt;">Davide Massi</span>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
