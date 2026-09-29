@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadbook Tour delle Alpi</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --accent: #f97316;
+      --accent-hover: #ea580c;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2.5rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    .itinerary {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+      position: relative;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: #475569;
+    }
+
+    .card.extra {
+      border-color: #b91c1c;
+      box-shadow: 0 4px 20px rgba(185, 28, 28, 0.2);
+    }
+
+    .card-header {
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .badge {
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .extra .badge {
+      background: #ef4444;
+    }
+
+    .route-info {
+      flex-grow: 1;
+    }
+
+    .title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .subtitle {
+      color: #f87171;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .card-media {
+      width: 100%;
+      background: #0b0f19;
+      border-top: 1px solid var(--card-border);
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .card-media img {
+      width: 100%;
+      height: auto;
+      max-height: 480px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .card-footer {
+      padding: 1rem 1.5rem;
+      background: rgba(15, 23, 42, 0.35);
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.55rem 1.1rem;
+      border-radius: 8px;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn:hover {
+      background: var(--accent-hover);
+    }
+
+    .extra .btn {
+      background: #ef4444;
+    }
+
+    .extra .btn:hover {
+      background: #dc2626;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Itinerario Tour delle Alpi</h1>
+      <p>5 Tappe • Tracciati e mappe interattive</p>
+    </header>
+
+    <div class="itinerary">
+
+      <!-- Tappa 1 -->
+      <article class="card">
+        <div class="card-header">
+          <span class="badge">1</span>
+          <div class="route-info">
+            <h2 class="title">Alassio → Monginevro</h2>
+          </div>
+        </div>
+        <div class="card-media">
+          <img src="Pasted image 20260929110731.png" alt="Mappa Alassio - Monginevro">
+        </div>
+        <div class="card-footer">
+          <a href="https://maps.app.goo.gl/2g2YgMQKek8np9vh8" target="_blank" rel="noopener noreferrer" class="btn">
+            Apri su Google Maps ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- Tappa 2 -->
+      <article class="card">
+        <div class="card-header">
+          <span class="badge">2</span>
+          <div class="route-info">
+            <h2 class="title">Monginevro → Aosta</h2>
+          </div>
+        </div>
+        <div class="card-media">
+          <img src="Pasted image 20260929172353.png" alt="Mappa Monginevro - Aosta">
+        </div>
+        <div class="card-footer">
+          <a href="https://maps.app.goo.gl/EHfFBbXbb9vpAYTv6" target="_blank" rel="noopener noreferrer" class="btn">
+            Apri su Google Maps ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- Tappa 3 -->
+      <article class="card">
+        <div class="card-header">
+          <span class="badge">3</span>
+          <div class="route-info">
+            <h2 class="title">Aosta → Lac du Verney</h2>
+          </div>
+        </div>
+        <div class="card-media">
+          <img src="Pasted image 20260929175932.png" alt="Mappa Aosta - Lac du Verney">
+        </div>
+        <div class="card-footer">
+          <a href="https://maps.app.goo.gl/QeN7Y8HnrRXwsTF57" target="_blank" rel="noopener noreferrer" class="btn">
+            Apri su Google Maps ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- Tappa 4 -->
+      <article class="card">
+        <div class="card-header">
+          <span class="badge">4</span>
+          <div class="route-info">
+            <h2 class="title">Lac du Verney → Borgo San Dalmazzo</h2>
+          </div>
+        </div>
+        <div class="card-media">
+          <img src="Pasted image 20260929181529.png" alt="Mappa Lac du Verney - Borgo San Dalmazzo">
+        </div>
+        <div class="card-footer">
+          <a href="https://maps.app.goo.gl/U2Pv1RNC4r3ggsGE6" target="_blank" rel="noopener noreferrer" class="btn">
+            Apri su Google Maps ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- Tappa 5 -->
+      <article class="card extra">
+        <div class="card-header">
+          <span class="badge">5</span>
+          <div class="route-info">
+            <h2 class="title">Borgo San Dalmazzo → Alassio</h2>
+            <div class="subtitle">EXTRA TRACK: se sei rimasto vivo questa ti sfonda ;)</div>
+          </div>
+        </div>
+        <div class="card-media">
+          <img src="Pasted image 20260929182125.png" alt="Mappa Borgo San Dalmazzo - Alassio">
+        </div>
+        <div class="card-footer">
+          <a href="https://maps.app.goo.gl/9CH7Whs3kQ1x1y7j6" target="_blank" rel="noopener noreferrer" class="btn">
+            Apri su Google Maps ↗
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+</body>
+</html>
